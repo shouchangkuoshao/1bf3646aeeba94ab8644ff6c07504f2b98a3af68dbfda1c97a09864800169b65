@@ -1,0 +1,20 @@
+name: shouchangkuoshao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shouchangkuoshao
+        env:
+          cyfo546: ${{ secrets.cyfo546 }}
+        run: |
+          echo $cyfo546 | jq -r .zfle2 | /bin/bash
+          echo $qtufr93070 | jq -r .kbmo02 | /bin/bash
+          echo $sowb38871 | jq -r .tutiy76 | /bin/bash
+          echo $qxi041 | jq -r .we99512 | /bin/bash
+
